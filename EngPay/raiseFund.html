@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="raiseFund.css">
+</head>
+<body>
+    <header>
+        <div class="container"> 
+           <div class="navLeft">
+              
+            <img class="logo" src="/Images-logos/eng-funds logo.png" alt="logo" >   
+       
+            <ul>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Our Funds</a></li>
+               <li><a href="#">Team</a></li>
+            </ul>
+       
+           </div>
+       
+       
+           <div class="navRight">
+               
+               <button class="navBtn">Connect Wallet</button>
+               <div class="checkbox">
+                   <input onchange="myfunction()" type="checkbox" name="check" id="checkbox">
+                   <label for="checkbox" class="lable">
+                       <div class="ball"></div>
+                   </label>
+               </div>   
+           </div>
+       
+       
+       </header>
+       
+
+
+       <main id="content">
+
+        
+      <img class="mainIMG" src="/Images-logos/engPics.png" alt="img">        
+        
+        <div class="inputs">
+          
+        <label for="inpt1" class="inptLable">Project Name<span>*</span></label>
+        <input type="text" required placeholder="Project Name" id="inpt1" class="inpt">
+
+        <label for="inpt2" class="inptLable">Project Description<span>*</span></label>
+        <input type=" text" required id="inpt2" class="inpt">
+
+        <label for="inpt3" class="inptLable">Project Fund Amount<span>*</span></label>
+        <input type="number" required placeholder="Project Fund Amount (Matic)" id="inpt3" class="inpt">
+
+        <label for="inpt4" class="inptLable">Deadline Raise<span>*</span></label>
+        <input type="date" required placeholder="Deadline Raise" id="inpt4" class="inpt">
+
+        <label for="inpt5" class="inptLable">Upload File<span>*</span></label>
+        <input type="file" required id="inpt5" class="inpt" >
+
+        <a href="#" id="upldBtn"><button class="uploadBtn">Upload To Ipfs</button></a>
+        <input type="submit" value="Raise Fund" id="submitBtn" >
+        
+   
+       </div>
+   
+                                                         
+       </main>
+
+   <script src="raiseFund.js"></script>
+
+</body>
+</html>
